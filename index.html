@@ -31,7 +31,131 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p>Welcome to Developer tools
+        <p>Welcome to Developer tools</p>
+
+<p>Virtual Host:</p>
+
+<p>mydrupalsite.dev
+mydrupalsite_db</p>
+
+<p>On Windows changes for creating virtual host:</p>
+
+<ol>
+<li>Navigate to C:\Windows\System32\drivers\etc</li>
+<li>Change file type to all files.</li>
+<li>Open hosts file.</li>
+<li>Add this at the end of the line:</li>
+</ol>
+
+<p>127.0.0.1 mydrupalsite.dev</p>
+
+<ol>
+<li>Save file.</li>
+<li>Start Apache.</li>
+<li>Enter virtual host name to web browser address bar</li>
+</ol>
+
+<p>Continous Deployment:</p>
+
+<p>Maturity Model Phase 1(3-6 months)</p>
+
+<ol>
+<li>Trusted Source Control and Issue tracking</li>
+<li>TDD</li>
+<li>Continous integration</li>
+<li>Automation of deployments</li>
+<li>And you are still nowhere near continous deployment</li>
+</ol>
+
+<p>Phase 1 Activities:</p>
+
+<p>Write test first
+Write deployment scripts first
+Pair program on the challenging parts
+Increase the frequency of everything which means automate everything</p>
+
+<p>TDD in 1 Week Outline:
+1. Refuse to write console.log statements or use the debugger(because of typo problem such as semi-colon or type checking problem)
+2. If you are using Javascript,you are screwed if you dont write tests.</p>
+
+<p>Automation in 1 Week
+1. Dont type anything in a remote shell.Do eveything via Fabric,Capistrano,etc
+2. Put your automation code in git submodule so you can reuse across your projects
+3. When stable(after a few projects) turn it into a node module with reference in package.json</p>
+
+<p>Maturity Model Phase 2(6-9 months):</p>
+
+<p>What are the chances of getting a small feature deployed into production safely in 1 hr</p>
+
+<ol>
+<li>Feature based thinking
+A. small,logical commits with good commit messages
+B. good tests(and an architect that supports them)
+C. Continous integration metrics are trending excellent</li>
+</ol>
+
+<p>Comfortable feature flow
+1. WIP is managed via real Scrum/Kanban
+2. all features reviewed or pair-programmed(strongly related to pull request)
+3. deployment to staging is semi-automated
+4. Focus on clarity,sustainability,and velocity - i.e flow,not capacity</p>
+
+<p>Phase 2 Activities:</p>
+
+<ol>
+<li>Lots of Git hooks</li>
+<li>JSHint</li>
+<li>Reject any commit that doesn't pass lint and that doesn't have a headline</li>
+<li>Single commit per pull request(git inteactive rebasing)</li>
+<li>Everyone is a Git ninja and the commits are clear,concise and independent</li>
+</ol>
+
+<p>Phase 3(9-12 months):</p>
+
+<p>Are you ready for multiple deploys per day?
+1. First commit acceptance rate
+2. % Issues captured on staging versus production
+3. Are you discussing getting rid of the staging server
+4. How fast are your deploys?Rollbacks?</p>
+
+<p>Phase 3 Activities:</p>
+
+<ol>
+<li>Review performance metrics</li>
+<li>Clear define the cost-benefit of production failures</li>
+<li>Increase frequencies of deployments in the concept of your production failure risk profile</li>
+</ol>
+
+<p>Tools:</p>
+
+<ol>
+<li>GIT</li>
+<li>Jenkins</li>
+<li>Mocha</li>
+<li>Karma</li>
+<li>Kanban/Scrum(Trello)</li>
+<li>Commitment</li>
+</ol>
+
+<p>GIT for Continous Deployment</p>
+
+<ol>
+<li>git rebase master every day</li>
+<li>git rebase interactive
+A. Before pull request
+B. every few days on more complex features</li>
+</ol>
+
+<p>Mastering Commits rebase
+1. If rebasing branches already push remotely
+A. ensure only admin can rewrite master
+B. Configure all local environments to only push current branch</p>
+
+<p>gitconfig
+[push]
+default = upstream
+GIT Sub Modules
+An easy way to break your projects into module
 <a href="https://www.indiegogo.com/projects/bluewire-hands-free-smartphone-voip-call-recorder">https://www.indiegogo.com/projects/bluewire-hands-free-smartphone-voip-call-recorder</a></p>
 
 <p><a href="http://designation.io/">http://designation.io/</a>
@@ -80,6 +204,127 @@ bootply.com
 <a href="http://felicegattuso.com/projects/datedropper/">http://felicegattuso.com/projects/datedropper/</a>
 <a href="http://reapp.io/">http://reapp.io/</a>
 <a href="https://github.com/taptapship/wiredep">https://github.com/taptapship/wiredep</a></p>
+
+<p>IDM: DBNJC-D4R59-YPAGA-T3S1Q
+Smartbro number: 09281248417
+<a href="mailto:micz.mash@gmail.com">micz.mash@gmail.com</a>
+<a href="mailto:greek_senpai@yahoo.com.ph">greek_senpai@yahoo.com.ph</a>
+churchill
+whiteboard/eraser -CDR-King
+Minify CSS,HTML,JS &amp; Images
+Research what is Fabric
+Break down the problem into the simplest possible parts. Try to do them one at a time, such as in a console, so you can clearly understand what is and isn’t working.
+Duplicating of a whole line : CTRL+D . Setting the cursor at the end of any line and pressing this combination ,  duplicates the current line (the new line is positioned under the current line)
+Regex pattern for form validation
+1. websignup_review_form_validate($form, &amp;$form_state)
+2. ava_websignup_form_alter($form, &amp;$form_state,$form_id)
+3. ava_websignup_webform_submission_insert($node,$submission)</p>
+
+<p>ava_websignup.module functions:</p>
+
+<ol>
+<li>ava_websignup_webform_submission_insert($node,$submission)</li>
+<li>ava_websignup_form_alter(&amp;$form, &amp;$form_state, $form_id)</li>
+<li>websignup_review_form_validate(&amp;$form, &amp;$form_state)</li>
+</ol>
+
+<p>nozbe.com
+backhub.co
+raindrop.io
+nazuka.net
+000webhost.com
+unroll.me
+<a href="https://developers.google.com/speed/pagespeed/insights">https://developers.google.com/speed/pagespeed/insights</a>
+<a href="http://phpepl.cloudcontrolled.com/">http://phpepl.cloudcontrolled.com/</a>
+<a href="http://repl.it/languages/JavaScript">http://repl.it/languages/JavaScript</a>
+<a href="http://repl.it/languages/Ruby">http://repl.it/languages/Ruby</a>
+<a href="https://www.youtube.com/watch?v=syC9m4RJaPc">https://www.youtube.com/watch?v=syC9m4RJaPc</a>
+<a href="http://jlm.nazuka.net/oneoasis/wp-login.php">http://jlm.nazuka.net/oneoasis/wp-login.php</a>
+<a href="http://code.tutsplus.com/tutorials/creating-your-own-widgets-using-various-wordpress-apis-introduction--cms-22460">http://code.tutsplus.com/tutorials/creating-your-own-widgets-using-various-wordpress-apis-introduction--cms-22460</a>
+<a href="http://aws.amazon.com/glacier/">http://aws.amazon.com/glacier/</a>
+<a href="http://courses.osherove.com/courses/tdd-and-bdd-in-ruby">http://courses.osherove.com/courses/tdd-and-bdd-in-ruby</a>
+<a href="http://courses.osherove.com/courses/the-art-of-unit-testing-and-tdd-in-java">http://courses.osherove.com/courses/the-art-of-unit-testing-and-tdd-in-java</a>
+<a href="http://courses.osherove.com/courses/the-art-of-unit-testing-and-tdd-in-java">http://courses.osherove.com/courses/the-art-of-unit-testing-and-tdd-in-java</a>
+<a href="https://www.growthhacker.tv">https://www.growthhacker.tv</a>
+<a href="http://www.meetup.com/Milwaukee-WordPress-MeetUp/">http://www.meetup.com/Milwaukee-WordPress-MeetUp/</a>
+<a href="http://www.meetup.com/Milwaukee-WordPress-MeetUp/messages/boards/">http://www.meetup.com/Milwaukee-WordPress-MeetUp/messages/boards/</a>
+<a href="http://lab.maltewassermann.com/viewport-resizer/">http://lab.maltewassermann.com/viewport-resizer/</a>
+<a href="https://1wd.tv/all-courses/">https://1wd.tv/all-courses/</a>
+<a href="https://unsplash.com/">https://unsplash.com/</a>
+<a href="https://placeit.net/">https://placeit.net/</a>
+<a href="https://www.youtube.com/channel/UCkiC21kJxYO_eUEJ5GgFLnw">https://www.youtube.com/channel/UCkiC21kJxYO_eUEJ5GgFLnw</a>
+file:///C:/Users/JLM/Desktop/HTML%20Lessons/learnprogram/https___www.learnhowtoprogram.com/www.learnhowtoprogram.com/lessons/block-elements.html
+<a href="http://ladieslearningcode.com/Workshops/wordpress">http://ladieslearningcode.com/Workshops/wordpress</a>
+<a href="http://ph.jobsdb.com/ph/jobs/information-technology/1?JSSRC=HPJC&amp;utm_campaign=house_banner_it&amp;utm_source=billboard&amp;utm_medium=banner&amp;utm_content=banner_link&amp;utm_term=%7Bkeyword%7D">http://ph.jobsdb.com/ph/jobs/information-technology/1?JSSRC=HPJC&amp;utm_campaign=house_banner_it&amp;utm_source=billboard&amp;utm_medium=banner&amp;utm_content=banner_link&amp;utm_term={keyword}</a>
+<a href="https://appexchange.salesforce.com/listingDetail?listingId=a0N3000000B56AMEAZ">https://appexchange.salesforce.com/listingDetail?listingId=a0N3000000B56AMEAZ</a>
+<a href="http://blogforce9dev-developer-edition.ap1.force.com/ProjectDetail?id=a0290000009MI61">http://blogforce9dev-developer-edition.ap1.force.com/ProjectDetail?id=a0290000009MI61</a>
+<a href="http://www.oyecode.com/2013/11/how-to-use-bootstrap-3-with.html">http://www.oyecode.com/2013/11/how-to-use-bootstrap-3-with.html</a>
+<a href="https://developer.salesforce.com/blogs/developer-relations/2014/03/twitter-bootstrap-and-visualforce-in-minutes.html">https://developer.salesforce.com/blogs/developer-relations/2014/03/twitter-bootstrap-and-visualforce-in-minutes.html</a>
+<a href="https://www.youtube.com/watch?v=sIWchyCqDa4">https://www.youtube.com/watch?v=sIWchyCqDa4</a>
+<a href="https://www.youtube.com/watch?v=hoUb9yB3jjI">https://www.youtube.com/watch?v=hoUb9yB3jjI</a>
+<a href="https://www.youtube.com/watch?v=KJboB6H7Ado">https://www.youtube.com/watch?v=KJboB6H7Ado</a>
+swagger.io
+<a href="http://raml.org/docs.html">http://raml.org/docs.html</a>
+<a href="http://online-code-generator.com/rest-api-starter-script.php">http://online-code-generator.com/rest-api-starter-script.php</a>
+<a href="http://www.therightlifestyle.it/software-hardware/">http://www.therightlifestyle.it/software-hardware/</a>
+<a href="https://www.indiegogo.com/projects/therightpen-type-1000wpm-translate-in-one-second/contributions/new">https://www.indiegogo.com/projects/therightpen-type-1000wpm-translate-in-one-second/contributions/new</a>
+phptherightway.com
+<a href="https://developer.chrome.com/devtools/docs/remote-debugging">https://developer.chrome.com/devtools/docs/remote-debugging</a>
+<a href="http://bootboxjs.com/">http://bootboxjs.com/</a>
+<a href="https://www.learnhowtoprogram.com/sections/jquery">https://www.learnhowtoprogram.com/sections/jquery</a>
+<a href="https://github.com/makersquare/admissions-challenge">https://github.com/makersquare/admissions-challenge</a>
+<a href="http://www.codecademy.com/en/tracks/javascript">http://www.codecademy.com/en/tracks/javascript</a>
+<a href="https://www.learnhowtoprogram.com/sections/angularjs">https://www.learnhowtoprogram.com/sections/angularjs</a>
+<a href="https://www.learnhowtoprogram.com/lessons/using-git">https://www.learnhowtoprogram.com/lessons/using-git</a>
+<a href="https://www.learnhowtoprogram.com/lessons/git-cheat-sheet">https://www.learnhowtoprogram.com/lessons/git-cheat-sheet</a>
+<a href="http://teamtreehouse.com/library/console-foundations">http://teamtreehouse.com/library/console-foundations</a>
+<a href="http://blog.sheelahb.com/2014/04/30/simplify-your-cross-device-and-browser-testing-with-browser-sync/">http://blog.sheelahb.com/2014/04/30/simplify-your-cross-device-and-browser-testing-with-browser-sync/</a>
+<a href="https://github.com/BrowserSync/grunt-browser-sync">https://github.com/BrowserSync/grunt-browser-sync</a>
+<a href="http://john-dugan.com/apache-browsersync-cross-site-requests-cors-configuration/">http://john-dugan.com/apache-browsersync-cross-site-requests-cors-configuration/</a>
+<a href="http://vanamco.com/ghostlab/">http://vanamco.com/ghostlab/</a>
+<a href="http://editor.swagger.io/#/edit">http://editor.swagger.io/#/edit</a>
+<a href="http://www.pluralsight.com/courses/creating-chrome-extensions">http://www.pluralsight.com/courses/creating-chrome-extensions</a>
+<a href="http://strongloop.com/">http://strongloop.com/</a>
+<a href="http://www.pluralsight.com/courses/build-process-workflows-tooling-gruntjs">http://www.pluralsight.com/courses/build-process-workflows-tooling-gruntjs</a>
+<a href="http://www.lynda.com/Web-Web-Design-tutorials/Web-Project-Workflows-Gulpjs-Git-Browserify/154416-2.html">http://www.lynda.com/Web-Web-Design-tutorials/Web-Project-Workflows-Gulpjs-Git-Browserify/154416-2.html</a>
+<a href="https://chrome.google.com/webstore/detail/ember/egpkelgmfbcppcjeefkbfemdfjljnhai">https://chrome.google.com/webstore/detail/ember/egpkelgmfbcppcjeefkbfemdfjljnhai</a>
+<a href="http://browserify.org/">http://browserify.org/</a>
+<a href="http://bourbon.io/">http://bourbon.io/</a>
+<a href="http://seesparkbox.com/foundry/composable_js">http://seesparkbox.com/foundry/composable_js</a>
+<a href="https://www.youtube.com/channel/UCW1kqCoWJ4Pn_MnBtYVwaCA">https://www.youtube.com/channel/UCW1kqCoWJ4Pn_MnBtYVwaCA</a>
+<a href="http://skylang.us/">http://skylang.us/</a>
+<a href="http://itcss.io/">http://itcss.io/</a>
+<a href="http://www.webhook.com/?deck">http://www.webhook.com/?deck</a>
+<a href="http://html5boilerplate.com/">http://html5boilerplate.com/</a>
+<a href="http://creativemornings.com/talks">http://creativemornings.com/talks</a>
+<a href="http://getskeleton.com/">http://getskeleton.com/</a>
+<a href="http://miekd.com/articles/using-css-sprites-to-optimize-your-website-for-retina-displays/">http://miekd.com/articles/using-css-sprites-to-optimize-your-website-for-retina-displays/</a>
+<a href="https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/use-media-queries?hl=en#apply-media-queries-based-on-viewport-size">https://developers.google.com/web/fundamentals/layouts/rwd-fundamentals/use-media-queries?hl=en#apply-media-queries-based-on-viewport-size</a>
+<a href="https://developers.google.com/web/fundamentals/getting-started/web-starter-kit/">https://developers.google.com/web/fundamentals/getting-started/web-starter-kit/</a>
+<a href="http://sebastien-gabriel.com/designers-guide-to-dpi/home">http://sebastien-gabriel.com/designers-guide-to-dpi/home</a>
+<a href="http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/">http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/</a>
+<a href="http://www.creativebloq.com/css3/tips-breathe-new-life-your-css-61411880">http://www.creativebloq.com/css3/tips-breathe-new-life-your-css-61411880</a>
+<a href="http://keithclark.co.uk/articles/pure-css-parallax-websites/">http://keithclark.co.uk/articles/pure-css-parallax-websites/</a>
+gulp-uncss(the best)
+gulp-critical
+webpagetest cli
+grunt-perfbudget
+phantomas cli
+parker on npm
+mod_pagespeed
+ngx_pagespeed
+Critical npm
+CriticalCSS
+phantomcss
+phantomjs
+casperjs
+cappucino,espresso
+gulf-uglify
+gulf-cssmin
+gulp-htmlmin
+gulp-imagemin
+gul-svgmin
+CSSShrink</p>
       </section>
     </div>
 
